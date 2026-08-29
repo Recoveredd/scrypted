@@ -2,6 +2,12 @@
 
 Scrypted is a high performance home video integration platform and NVR with smart detections. [Instant, low latency, streaming](https://streamable.com/xbxn7z) to HomeKit, Google Home, and Alexa. Supports most cameras. [Learn more](https://docs.scrypted.app).
 
+## About this fork
+
+This fork carries a targeted compatibility fix for Ring accounts that access a location through account sharing. The upstream Ring plugin could authenticate such an account but discover no locations, so shared doorbells and cameras never appeared in Scrypted.
+
+The Ring plugin in this repository uses [`Recoveredd/ring`](https://github.com/Recoveredd/ring), which adapts the Ring API v3 location, device, event, and permission handling from [`dgreif/ring#1749`](https://github.com/dgreif/ring/pull/1749) while preserving Scrypted's streaming changes. The custom plugin version is identified by the `-recoveredd` suffix. This fork can return to the upstream Ring submodule after equivalent shared-account support is released and validated.
+
 <img src="https://github.com/koush/scrypted/assets/73924/57e1d556-cd3d-4448-81f9-a6c51b6513de">
 
 ## Installation and Documentation
