@@ -3,8 +3,8 @@
 	url = ../../koush/unifi-protect.git
 [submodule "external/ring-client-api"]
 	path = external/ring-client-api
-	url = ../../koush/ring
-	branch = fork
+	url = ../../Recoveredd/ring
+	branch = ring-shared-locations-v3
 [submodule "plugins/vscode-typescript"]
 	path = plugins/vscode-typescript
 	url = ../../koush/scrypted-vscode-typescript/
